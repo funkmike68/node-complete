@@ -8,6 +8,8 @@ const shopRoutes = require("./routes/shop");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.set("views");
+
 app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
